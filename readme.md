@@ -41,11 +41,7 @@ We also use Ryan Hipples’ game architecture with scriptable objects to achieve
 
 ## Planning
 
-We use ClickUp for our scrum process, down here you should be able to see the board and it's tasks. 
-
-<iframe class="clickup-embed" src="https://share.clickup.com/b/h/5-18707723-2/ae83db68e9a21d8" onwheel="" width="100%" height="700px" style="background: transparent; border: 1px solid #ccc;"></iframe>
-
-*If it doesn't show up, please [click here](https://share.clickup.com/tl/h/4eh0u-8/a4546abcbb9f1e4).*
+We use [ClickUp](https://share.clickup.com/tl/h/4eh0u-8/a4546abcbb9f1e4) for our scrum process, if you [click here](https://share.clickup.com/tl/h/4eh0u-8/a4546abcbb9f1e4) you should be able to visit the board and view all it's tasks.
 
 
 
