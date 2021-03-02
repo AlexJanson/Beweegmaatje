@@ -3,8 +3,8 @@ using UnityEditor;
 
 namespace Beweegmaatje.Variables
 {
-    [CustomPropertyDrawer(typeof(FloatReference))]
-    public class FloatReferenceDrawer : PropertyDrawer
+    [CustomPropertyDrawer(typeof(BaseReference), true)]
+    public class BaseReferenceDrawer : PropertyDrawer
     {
         /// <summary>
         /// Options to display in the popup to select constant or variable.
@@ -29,9 +29,9 @@ namespace Beweegmaatje.Variables
             EditorGUI.BeginChangeCheck();
 
             // Get properties
-            SerializedProperty useConstant = property.FindPropertyRelative("UseConstant");
-            SerializedProperty constantValue = property.FindPropertyRelative("ConstantValue");
-            SerializedProperty variable = property.FindPropertyRelative("Variable");
+            SerializedProperty useConstant = property.FindPropertyRelative("_useConstant");
+            SerializedProperty constantValue = property.FindPropertyRelative("_constantValue");
+            SerializedProperty variable = property.FindPropertyRelative("_variable");
 
             // Calculate rect for configuration button
             Rect buttonRect = new Rect(position);

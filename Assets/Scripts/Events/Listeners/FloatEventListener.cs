@@ -1,6 +1,6 @@
 namespace Beweegmaatje.Events
 {
-    public class FloatEventListener : BaseGameEventListener<float, FloatEvent, UnityFloatEvent>
+    public sealed class FloatEventListener : BaseGameEventListener<float, FloatEvent, UnityFloatEvent>
     {
     }
 }

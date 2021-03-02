@@ -4,7 +4,7 @@ using UnityEngine.Events;
 namespace Beweegmaatje.Events
 {
     [Serializable]
-    public class UnityVoidEvent : UnityEvent<Void>
+    public sealed class UnityVoidEvent : UnityEvent<Void>
     {
     }
 }
