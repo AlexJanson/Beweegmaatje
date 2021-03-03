@@ -62,6 +62,11 @@ namespace Beweegmaatje.Variables
         {
             return Value.ToString();
         }
+
+        public static implicit operator TBase(BaseReference<TBase, TVariable> reference)
+        {
+            return reference.Value;
+        }
     }
 
     public abstract class BaseReference { }
