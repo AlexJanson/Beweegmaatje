@@ -1,6 +1,6 @@
 namespace Beweegmaatje.Events
 {
-    public class VoidEventListener : BaseGameEventListener<Void, VoidEvent, UnityVoidEvent>
+    public sealed class VoidEventListener : BaseGameEventListener<Void, VoidEvent, UnityVoidEvent>
     {
     }
 }
