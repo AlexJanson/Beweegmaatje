@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -49,6 +50,14 @@ namespace Beweegmaatje.Core
 
         public static void LoadSlotsNames(SavesData data)
         {
+            if (!File.Exists(_SaveSlotsFilePath))
+            {
+                SavesData saveData = ScriptableObject.CreateInstance<SavesData>();
+                string emptyJsonData = JsonUtility.ToJson(saveData);
+                JsonUtility.FromJsonOverwrite(emptyJsonData, data);
+                return;
+            }
+
             string jsonData = File.ReadAllText(_SaveSlotsFilePath);
             JsonUtility.FromJsonOverwrite(jsonData, data);
         }
@@ -63,6 +72,26 @@ namespace Beweegmaatje.Core
 
             string jsonData = JsonUtility.ToJson(data);
             File.WriteAllText(_SaveSlotsFilePath, jsonData);
+        }
+
+        public static void SaveSlotsNames(SavesData data, string username)
+        {
+            int index = Array.IndexOf(Utilities.SaveNames, Utilities.CurrentSaveFileName);
+            data.saveNames[index] = username;
+            SaveSlotsNames(data);
+        }
+
+        public static bool SavesExist()
+        {
+            foreach (string name in Utilities.SaveNames)
+            {
+                if (!File.Exists(_SavePath + name))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }

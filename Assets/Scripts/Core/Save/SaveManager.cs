@@ -1,3 +1,4 @@
+using Beweegmaatje.Events;
 using UnityEngine;
 
 namespace Beweegmaatje.Core
@@ -8,23 +9,42 @@ namespace Beweegmaatje.Core
     public class SaveManager : MonoBehaviour
     {
         [SerializeField]
-        private PlayerData _PlayerData;
+        PlayerData _PlayerData;
         [SerializeField]
-        private SavesData _SavesData;
+        SavesData _SavesData;
+
+        [SerializeField]
+        VoidEvent _SlotSelected;
 
         private void Awake()
         {
             SaveSystem.LoadSlotsNames(_SavesData);
+
+            if (!SaveSystem.SavesExist())
+            {
+                PlayerData playerData = ScriptableObject.CreateInstance<PlayerData>();
+                foreach (string name in Utilities.SaveNames)
+                {
+                    SaveSystem.SavePlayerData(name, playerData);
+                }
+            }
         }
 
         public void Save(string filename)
         {
             SaveSystem.LoadPlayerData(filename, _PlayerData);
+            Utilities.CurrentSaveFileName = filename;
+            _SlotSelected.Raise();
         }
 
         public void LoadSave(string filename)
         {
             SaveSystem.LoadPlayerData(filename, _PlayerData);
+        }
+
+        public void ResetCurrentSaveFileName()
+        {
+            Utilities.CurrentSaveFileName = "";
         }
     }
 }
