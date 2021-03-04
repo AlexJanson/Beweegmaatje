@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Beweegmaatje
 {
@@ -10,16 +11,16 @@ namespace Beweegmaatje
     public class chooseCharacter : MonoBehaviour
     {
 
-        public GameObject[] character;
+        public GameObject character;
+
+        public Material[] characterColor;
 
         private int _characterNumber = 0;
-
-        private int _characterAmount = 0;
 
         // Start is called before the first frame update
         void Start()
         {
-          
+           
         }
 
         // Update is called once per frame
@@ -30,37 +31,47 @@ namespace Beweegmaatje
 
         public void NextCharacter()
         {
-            character[_characterNumber].SetActive(false);
+            //character[_characterNumber].SetActive(false);
             _characterNumber++;
-            if (_characterNumber >= character.Length)
+            if (_characterNumber >= characterColor.Length)
             {
                 _characterNumber = 0;
-                character[_characterNumber].SetActive(true);
+                //character[_characterNumber].SetActive(true);
+                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
+
             }
             else
             {
-                character[_characterNumber].SetActive(true);
+                //character[_characterNumber].SetActive(true);
+                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
             }
         }
 
         public void PrevCharacter()
         {
-            character[_characterNumber].SetActive(false);
+            //character[_characterNumber].SetActive(false);
             _characterNumber--;
             if (_characterNumber < 0)
             {
-                _characterNumber = 2;
-                character[_characterNumber].SetActive(true);
+                _characterNumber = characterColor.Length - 1;
+                //character[_characterNumber].SetActive(true);
+                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
             }
             else
             {
-                character[_characterNumber].SetActive(true);
+                //character[_characterNumber].SetActive(true);
+                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
             }
         }
 
         public void ConfirmChacracter()
         {
-
+          //  for (int i = 0; i < character.Length; i++)
+           // {
+               // if (character[i].activeSelf == false)
+               //     Destroy(character[i].gameObject);
+           // }
+            SceneManager.LoadScene("CharacterTestScene");
         }
     }
 }
