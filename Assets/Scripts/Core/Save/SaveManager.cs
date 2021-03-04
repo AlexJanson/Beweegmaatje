@@ -15,6 +15,8 @@ namespace Beweegmaatje.Core
 
         [SerializeField]
         VoidEvent _SlotSelected;
+        [SerializeField]
+        VoidEvent _RefreshSlotNames;
 
         private void Awake()
         {
@@ -45,6 +47,16 @@ namespace Beweegmaatje.Core
         public void ResetCurrentSaveFileName()
         {
             Utilities.CurrentSaveFileName = "";
+        }
+
+        public void DeleteSave(string filename)
+        {
+            var newPlayerData = ScriptableObject.CreateInstance<PlayerData>();
+            SaveSystem.SavePlayerData(filename, newPlayerData);
+
+            Utilities.CurrentSaveFileName = filename;
+            SaveSystem.SaveSlotsNames(_SavesData, "");
+            _RefreshSlotNames.Raise();
         }
     }
 }
