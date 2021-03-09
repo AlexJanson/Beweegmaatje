@@ -14,7 +14,7 @@ namespace Beweegmaatje.Events
             Event.RegisterListeners(this);
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             Event.UnregisterListeners(this);
         }
