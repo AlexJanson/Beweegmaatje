@@ -7,7 +7,7 @@ using Beweegmaatje.Variables;
 /// This is a really simple script that just converts the stepcount to the rotation of the planet
 /// It requires input from a scriptable object
 /// </summary>
-namespace Overworld
+namespace Beweegmaatje.Overworld
 {
     public class SphereRotator : MonoBehaviour
     {
