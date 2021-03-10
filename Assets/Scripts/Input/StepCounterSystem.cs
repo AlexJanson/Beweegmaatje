@@ -24,11 +24,6 @@ namespace Beweegmaatje.Input
             StartPedometer();
         }
 
-        private void FixedUpdate()
-        {
-            Debug.Log(_steps);
-        }
-
         private void StartPedometer()
         {
             // Initialize the pedometer
