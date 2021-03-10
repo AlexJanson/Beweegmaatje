@@ -4,7 +4,7 @@ using UnityEngine;
 using Beweegmaatje.Variables;
 using Beweegmaatje.Events;
 
-namespace Beweegmaatje
+namespace Beweegmaatje.Steps
 {
     /// <summary>
     /// Defines a stepgoal to be used in further gamelogic

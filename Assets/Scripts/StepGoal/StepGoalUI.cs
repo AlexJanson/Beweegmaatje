@@ -4,7 +4,7 @@ using UnityEngine;
 using Beweegmaatje.Variables;
 using UnityEngine.UI;
 
-namespace Beweegmaatje
+namespace Beweegmaatje.Steps
 {
     public class StepGoalUI : MonoBehaviour
     {
