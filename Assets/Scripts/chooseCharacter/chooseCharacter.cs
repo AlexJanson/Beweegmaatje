@@ -37,13 +37,13 @@ namespace Beweegmaatje
             {
                 _characterNumber = 0;
                 //character[_characterNumber].SetActive(true);
-                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
+                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
 
             }
             else
             {
                 //character[_characterNumber].SetActive(true);
-                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
+                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
             }
         }
 
@@ -55,22 +55,17 @@ namespace Beweegmaatje
             {
                 _characterNumber = characterColor.Length - 1;
                 //character[_characterNumber].SetActive(true);
-                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
+                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
             }
             else
             {
                 //character[_characterNumber].SetActive(true);
-                character.GetComponent<MeshRenderer>().material = characterColor[_characterNumber];
+                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
             }
         }
 
         public void ConfirmChacracter()
         {
-          //  for (int i = 0; i < character.Length; i++)
-           // {
-               // if (character[i].activeSelf == false)
-               //     Destroy(character[i].gameObject);
-           // }
             SceneManager.LoadScene("CharacterTestScene");
         }
     }
