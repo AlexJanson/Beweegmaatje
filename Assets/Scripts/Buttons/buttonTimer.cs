@@ -17,21 +17,36 @@ namespace Beweegmaatje
         [SerializeField]
         private float _timer;
 
+        private float _savedTime;
+
         // Start is called before the first frame update
         void Start()
         {
+            _savedTime = _timer;
+        }
+
+        private void OnEnable()
+        {
             _continueButton.interactable = false;
+            _timeText.enabled = true;
             StartCoroutine(CountDownToStart());
         }
 
         // Update is called once per frame
         void Update()
         {
+
             if(_timer <= 0)
             {
                 _continueButton.interactable = true;
                 _timeText.enabled = false;
             }
+        }
+
+        public void continueButtonPressed()
+        {
+            _timer = _savedTime;
+            gameObject.SetActive(false);
         }
 
         IEnumerator CountDownToStart()
