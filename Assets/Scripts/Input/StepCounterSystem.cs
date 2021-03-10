@@ -30,6 +30,7 @@ namespace Beweegmaatje.Input
             var stepCounter = new Pedometer(OnStep);
         }
 
+        // Called on every step taken
         private void OnStep(int steps, double distance)
         {
             // Add a step
