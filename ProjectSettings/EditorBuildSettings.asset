@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StepCounter.unity
+    guid: b3eb8432134949d49adbee012c0375c1
   m_configObjects: {}
