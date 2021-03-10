@@ -8,14 +8,15 @@ namespace Beweegmaatje
     /* <summary>
      * In this class you can choose your character
     </summary>*/
-    public class chooseCharacter : MonoBehaviour
+    public class ChooseCharacter : MonoBehaviour
     {
 
-        public GameObject character;
+        [SerializeField]
+        private GameObject _character;
 
         public Material[] characterColor;
 
-        private int _characterNumber = 0;
+        private int _colorNumber = 0;
 
         // Start is called before the first frame update
         void Start()
@@ -31,42 +32,31 @@ namespace Beweegmaatje
 
         public void NextCharacter()
         {
-            //character[_characterNumber].SetActive(false);
-            _characterNumber++;
-            if (_characterNumber >= characterColor.Length)
+            _colorNumber++;
+            if (_colorNumber >= characterColor.Length)
             {
-                _characterNumber = 0;
-                //character[_characterNumber].SetActive(true);
-                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
+                _colorNumber = 0;
+                _character.GetComponent<Renderer>().material = characterColor[_colorNumber];
 
             }
             else
             {
-                //character[_characterNumber].SetActive(true);
-                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
+                _character.GetComponent<Renderer>().material = characterColor[_colorNumber];
             }
         }
 
         public void PrevCharacter()
         {
-            //character[_characterNumber].SetActive(false);
-            _characterNumber--;
-            if (_characterNumber < 0)
+            _colorNumber--;
+            if (_colorNumber < 0)
             {
-                _characterNumber = characterColor.Length - 1;
-                //character[_characterNumber].SetActive(true);
-                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
+                _colorNumber = characterColor.Length - 1;
+                _character.GetComponent<Renderer>().material = characterColor[_colorNumber];
             }
             else
             {
-                //character[_characterNumber].SetActive(true);
-                character.GetComponent<Renderer>().material = characterColor[_characterNumber];
+                _character.GetComponent<Renderer>().material = characterColor[_colorNumber];
             }
-        }
-
-        public void ConfirmChacracter()
-        {
-            SceneManager.LoadScene("CharacterTestScene");
         }
     }
 }

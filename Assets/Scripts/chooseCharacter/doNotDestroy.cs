@@ -4,7 +4,10 @@ using UnityEngine;
 
 namespace Beweegmaatje
 {
-    public class doNotDestroy : MonoBehaviour
+    /* <summary>
+        If you put this class on an object it wil not be destroyed when you load the next scene
+    </summary>*/
+    public class DoNotDestroy : MonoBehaviour
     {
         void Awake()
         {
