@@ -7,7 +7,7 @@ namespace Beweegmaatje.ChooseCharacter
     /* <summary>
         If you put this class on an object it wil not be destroyed when you load the next scene
     </summary>*/
-    public class doNotDestroy : MonoBehaviour
+    public class DoNotDestroy : MonoBehaviour
     {
         void Awake()
         {
