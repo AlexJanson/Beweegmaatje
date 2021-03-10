@@ -46,7 +46,7 @@ namespace Beweegmaatje
         public void continueButtonPressed()
         {
             _timer = _savedTime;
-            gameObject.SetActive(false);
+            _continueButton.enabled = false;
         }
 
         IEnumerator CountDownToStart()
