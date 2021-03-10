@@ -9,7 +9,7 @@ using Beweegmaatje.Variables;
 /// This is done with a lerp, and customisable variables for the developer to play with such as boundaries, directions, speed, etc.
 /// It uses the Beweegmaatje Variables to obtain the stepcount.
 /// </summary>
-namespace Overworld
+namespace Beweegmaatje.Overworld
 {
     public class CloudBehaviour : MonoBehaviour
     {
