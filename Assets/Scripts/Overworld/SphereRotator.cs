@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Beweegmaatje.Variables;
 
+/// <summary>
+/// This is a really simple script that just converts the stepcount to the rotation of the planet
+/// It requires input from a scriptable object
+/// </summary>
 public class SphereRotator : MonoBehaviour
 {
     [SerializeField] IntVariable _steps;
