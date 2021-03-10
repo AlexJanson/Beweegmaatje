@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Beweegmaatje
+namespace Beweegmaatje.ChooseCharacter
 {
+    /* <summary>
+     * This class is used to switch scene's when a button is pressed
+    </summary>*/
     public class SwitchScene : MonoBehaviour
     {
 
