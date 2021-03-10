@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Beweegmaatje.Events
 {
-    public class BaseGameEvent<T> : ScriptableObject
+    public abstract class BaseGameEvent<T> : ScriptableObject
     {
         private readonly List<IBaseGameEventListener<T>> _listeners = new List<IBaseGameEventListener<T>>();
 

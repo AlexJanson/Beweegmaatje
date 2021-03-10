@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace Beweegmaatje.Events
 {
-    public class BaseGameEventListener<T, E, UER> : MonoBehaviour,
+    public abstract class BaseGameEventListener<T, E, UER> : MonoBehaviour,
         IBaseGameEventListener<T> where E : BaseGameEvent<T> where UER : UnityEvent<T>
     {
         public E Event;
@@ -14,7 +14,7 @@ namespace Beweegmaatje.Events
             Event.RegisterListeners(this);
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             Event.UnregisterListeners(this);
         }
