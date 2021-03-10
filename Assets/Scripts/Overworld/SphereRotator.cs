@@ -7,13 +7,16 @@ using Beweegmaatje.Variables;
 /// This is a really simple script that just converts the stepcount to the rotation of the planet
 /// It requires input from a scriptable object
 /// </summary>
-public class SphereRotator : MonoBehaviour
+namespace Overworld
 {
-    [SerializeField] IntVariable _steps;
-    [SerializeField] float _speed = 1;
-
-    void Update()
+    public class SphereRotator : MonoBehaviour
     {
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-_steps, 0, 0), _speed * Time.deltaTime);
+        [SerializeField] IntVariable _steps;
+        [SerializeField] float _speed = 1;
+
+        void Update()
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-_steps, 0, 0), _speed * Time.deltaTime);
+        }
     }
 }
