@@ -59,6 +59,8 @@ We use [ClickUp](https://share.clickup.com/tl/h/4eh0u-8/a4546abcbb9f1e4) for our
 
 - [Technical design](https://mediacollegeamsterdam.sharepoint.com/:w:/r/teams/ExamenGAGD2020-2021-Team07/Gedeelde%20documenten/Team%2007/Proef%20Proeve%20Documenten/Technisch%20design.docx?d=wcf21c34e40c44b6d9eef0329009c9543&csf=1&web=1&e=Y2yzPX)
 
+- [Style guide](https://mediacollegeamsterdam.sharepoint.com/:w:/t/ExamenGAGD2020-2021-Team07/EZ8vC3GYZ_1PgtoN2Pvnrn8ByJHP1pcujY6fhFYY76lMJw?e=VSHAJS)
+
   
 
 ## Sources
