@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.23303938, g: 0.3048904, b: 0.60309166, a: 1}
+  m_IndirectSpecularColor: {r: 0.23488657, g: 0.30655053, b: 0.6026776, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -224,7 +224,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423276169257307, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -243,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 998423276169257307, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423276169257307, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -274,7 +275,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423276342465250, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -293,7 +295,7 @@ PrefabInstance:
     - target: {fileID: 998423276342465250, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423276342465250, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -324,7 +326,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423276479710289, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -343,7 +346,7 @@ PrefabInstance:
     - target: {fileID: 998423276479710289, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423276479710289, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -434,7 +437,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423277465410460, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -453,7 +457,7 @@ PrefabInstance:
     - target: {fileID: 998423277465410460, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423277465410460, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -484,7 +488,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423277466885494, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -503,7 +508,7 @@ PrefabInstance:
     - target: {fileID: 998423277466885494, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423277466885494, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -529,7 +534,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423277536831853, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -548,7 +554,7 @@ PrefabInstance:
     - target: {fileID: 998423277536831853, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423277536831853, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -579,7 +585,8 @@ PrefabInstance:
         type: 3}
       propertyPath: _steps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056,
+        type: 2}
     - target: {fileID: 998423277626026303, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _speed.x
@@ -598,7 +605,7 @@ PrefabInstance:
     - target: {fileID: 998423277626026303, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
       propertyPath: _direction.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 998423277626026303, guid: c3b42b1df786efe4689cef38832b51ab,
         type: 3}
@@ -803,6 +810,26 @@ Transform:
   m_Father: {fileID: 1789552409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 41.034, y: -163, z: 35.883}
+--- !u!1 &1187542104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8332363379402312501, guid: 44dbd47a4805430488f1509fc07a313a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8332363378494908847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1187542105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187542104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ac3a2cc09fc5b4fb7832b418d2de27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _steps: {fileID: 11400000, guid: 0e118bf9e22b9c841bf92b8c64271056, type: 2}
+  _speed: 1
 --- !u!1 &1789552405
 GameObject:
   m_ObjectHideFlags: 0
