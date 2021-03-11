@@ -1,4 +1,5 @@
 using Beweegmaatje.Events;
+using Beweegmaatje.ChooseCharacter;
 using UnityEngine;
 
 namespace Beweegmaatje.Core
@@ -18,6 +19,9 @@ namespace Beweegmaatje.Core
         [SerializeField]
         VoidEvent _RefreshSlotNames;
 
+        [SerializeField]
+        SwitchScene _SwitchScene;
+
         private void Awake()
         {
             SaveSystem.LoadSlotsNames(_SavesData);
@@ -36,7 +40,10 @@ namespace Beweegmaatje.Core
         {
             SaveSystem.LoadPlayerData(filename, _PlayerData);
             Utilities.CurrentSaveFileName = filename;
-            _SlotSelected.Raise();
+            if (string.IsNullOrEmpty(_PlayerData.username))
+                _SlotSelected.Raise();
+            else
+                _SwitchScene.ConfirmChacracter();
         }
 
         public void LoadSave(string filename)

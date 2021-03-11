@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -171,8 +171,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -476}
-  m_SizeDelta: {x: 284, y: 46}
+  m_AnchoredPosition: {x: -4, y: -219}
+  m_SizeDelta: {x: 178.771, y: 35.733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401668466
 MonoBehaviour:
@@ -301,11 +301,11 @@ RectTransform:
   m_Father: {fileID: 824776431}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -203, y: 276}
-  m_SizeDelta: {x: 216, y: 104}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 29, y: -124}
+  m_SizeDelta: {x: 157.509, y: 90.423}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &690431960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,12 +392,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -575,11 +575,11 @@ RectTransform:
   m_Father: {fileID: 824776431}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 506}
-  m_SizeDelta: {x: 175, y: 175}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.063995, y: -12}
+  m_SizeDelta: {x: 132.134, y: 121.477}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1372440825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,8 +654,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -549}
-  m_SizeDelta: {x: 197, y: 46}
+  m_AnchoredPosition: {x: -4.000004, y: -275.707}
+  m_SizeDelta: {x: 124.006, y: 35.733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395409332
 MonoBehaviour:
@@ -785,7 +785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5999756, y: 9.6}
+  m_AnchoredPosition: {x: -2.5999756, y: 9.599998}
   m_SizeDelta: {x: 310, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1518242078
@@ -938,11 +938,11 @@ RectTransform:
   m_Father: {fileID: 824776431}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 295, y: 0}
-  m_SizeDelta: {x: 80, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -57.92099, y: 1.4}
+  m_SizeDelta: {x: 41.113, y: 37.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1630968923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1070,11 +1070,11 @@ RectTransform:
   m_Father: {fileID: 824776431}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -295, y: 0}
-  m_SizeDelta: {x: 80, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 11.120972, y: 0}
+  m_SizeDelta: {x: 41.113, y: 37.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1706810959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,16 +1196,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954003490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
 --- !u!114 &1954003492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,6 +1502,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2412087896327900249, guid: 6bf5322b222d1da49ba943db977b4c5d,
+        type: 3}
+      propertyPath: _nextScene
+      value: Ingame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412087896327900249, guid: 6bf5322b222d1da49ba943db977b4c5d,
+        type: 3}
+      propertyPath: _prevScene
+      value: Save Slots
+      objectReference: {fileID: 0}
     - target: {fileID: 3350016242807753469, guid: 6bf5322b222d1da49ba943db977b4c5d,
         type: 3}
       propertyPath: m_Name
