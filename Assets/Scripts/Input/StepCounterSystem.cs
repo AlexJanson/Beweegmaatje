@@ -24,17 +24,13 @@ namespace Beweegmaatje.Input
             StartPedometer();
         }
 
-        private void FixedUpdate()
-        {
-            Debug.Log(_steps);
-        }
-
         private void StartPedometer()
         {
             // Initialize the pedometer
             var stepCounter = new Pedometer(OnStep);
         }
 
+        // Called on every step taken
         private void OnStep(int steps, double distance)
         {
             // Add a step
